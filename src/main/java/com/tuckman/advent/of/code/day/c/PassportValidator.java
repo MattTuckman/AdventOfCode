@@ -2,6 +2,7 @@ package com.tuckman.advent.of.code.day.c;
 
 import org.apache.commons.lang3.StringUtils;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -12,11 +13,7 @@ public class PassportValidator {
 
     private static final Pattern fieldPat = Pattern.compile("([a-z]+):");
 
-    private List<String> requiredFields;
-
-    public PassportValidator(List<String> requiredFields) {
-        this.requiredFields = requiredFields;
-    }
+    private List<String> requiredFields = Arrays.asList("byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid");
 
     public long countValidPassports(List<String> passports) {
         StringBuilder passwordBatch = new StringBuilder();
@@ -45,7 +42,7 @@ public class PassportValidator {
         return numValid;
     }
 
-    private boolean isValidPassport(String passport) {
+    protected boolean isValidPassport(String passport) {
         Matcher matches = fieldPat.matcher(passport);
         Set<String> allMatches = new HashSet<>();
         while(matches.find()) {
