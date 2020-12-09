@@ -9,11 +9,11 @@ public class TemplateTest {
 
     @Test
     void test_exampleInput() {
-        List<String> exampleInput = AdventUtils.listLinesOfResource("");
+        List<String> exampleInput = AdventUtils.listLinesOfResource("example.txt");
     }
 
     @Test
     void test_actualInput() {
-        List<String> actualInput = AdventUtils.listLinesOfResource("");
+        List<String> actualInput = AdventUtils.listLinesOfResource("example.txt");
     }
 }
