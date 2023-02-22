@@ -1,7 +1,7 @@
 package com.tuckman.advent.of.code.day.k;
 
-import com.tuckman.advent.of.code.day.j.Ferry;
-import com.tuckman.advent.of.code.day.j.WaypointFerry;
+import com.tuckman.advent.of.code.twenty.day.j.Ferry;
+import com.tuckman.advent.of.code.twenty.day.j.WaypointFerry;
 
 import java.util.List;
 

@@ -1,6 +1,7 @@
 package com.tuckman.advent.of.code.day.e;
 
 import com.tuckman.advent.of.code.commons.AdventUtils;
+import com.tuckman.advent.of.code.twenty.day.e.CustomsAnswerCounter;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -13,7 +14,7 @@ class CustomsAnswerCounterTest {
 
     @Test
     void test_acutalInput() {
-        List<String> input = AdventUtils.listLinesOfResource("customsDeclarations.txt");
+        List<String> input = AdventUtils.listLinesOfResource("twenty/customsDeclarations.txt");
         int numAnswers = customsAnswerCounter.countTotalAnswers(input);
         System.out.println("Total actual answers: " + numAnswers);
 
@@ -21,7 +22,7 @@ class CustomsAnswerCounterTest {
 
     @Test
     void test_exampleInput() {
-        List<String> input = AdventUtils.listLinesOfResource("exampleCustomsDeclarations.txt");
+        List<String> input = AdventUtils.listLinesOfResource("twenty/exampleCustomsDeclarations.txt");
         int numAnswers = customsAnswerCounter.countTotalAnswers(input);
         System.out.println("Total example answers: " + numAnswers);
 
@@ -30,7 +31,7 @@ class CustomsAnswerCounterTest {
 
     @Test
     void test_acutalInput_2() {
-        List<String> input = AdventUtils.listLinesOfResource("customsDeclarations.txt");
+        List<String> input = AdventUtils.listLinesOfResource("twenty/customsDeclarations.txt");
         int numAnswers = customsAnswerCounter.countTotalAnswers2(input);
         System.out.println("Total actual answers: " + numAnswers);
 
@@ -38,7 +39,7 @@ class CustomsAnswerCounterTest {
 
     @Test
     void test_exampleInput_2() {
-        List<String> input = AdventUtils.listLinesOfResource("exampleCustomsDeclarations.txt");
+        List<String> input = AdventUtils.listLinesOfResource("twenty/exampleCustomsDeclarations.txt");
         int numAnswers = customsAnswerCounter.countTotalAnswers2(input);
         System.out.println("Total example answers: " + numAnswers);
 

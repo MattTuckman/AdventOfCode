@@ -1,6 +1,7 @@
 package com.tuckman.advent.of.code.day.c;
 
 import com.tuckman.advent.of.code.commons.AdventUtils;
+import com.tuckman.advent.of.code.twenty.day.c.PassportValidator;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -11,7 +12,7 @@ class PassportValidatorTest {
 
     @Test
     void test_exampleProblem() {
-        List<String> input = AdventUtils.listLinesOfResource("examplePassports.txt");
+        List<String> input = AdventUtils.listLinesOfResource("twenty/examplePassports.txt");
 
         PassportValidator passportValidator = new PassportValidator();
         long validCount = passportValidator.countValidPassports(input);
@@ -21,7 +22,7 @@ class PassportValidatorTest {
 
     @Test
     void test_actualProblem() {
-        List<String> lines = AdventUtils.listLinesOfResource("passportsInput.txt");
+        List<String> lines = AdventUtils.listLinesOfResource("twenty/passportsInput.txt");
 
         PassportValidator passportValidator = new PassportValidator();
         long validCount = passportValidator.countValidPassports(lines);

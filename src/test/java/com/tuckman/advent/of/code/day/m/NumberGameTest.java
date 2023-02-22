@@ -1,5 +1,6 @@
 package com.tuckman.advent.of.code.day.m;
 
+import com.tuckman.advent.of.code.twenty.day.m.NumberGame;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;

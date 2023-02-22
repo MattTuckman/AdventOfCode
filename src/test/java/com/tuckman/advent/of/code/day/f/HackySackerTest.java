@@ -1,6 +1,7 @@
 package com.tuckman.advent.of.code.day.f;
 
 import com.tuckman.advent.of.code.commons.AdventUtils;
+import com.tuckman.advent.of.code.twenty.day.f.HackySacker;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -14,7 +15,7 @@ class HackySackerTest {
 
     @Test
     void test_exampleInput() {
-        List<String> exampleInput = AdventUtils.listLinesOfResource("exampleHackySacks.txt");
+        List<String> exampleInput = AdventUtils.listLinesOfResource("twenty/exampleHackySacks.txt");
         Set<String> goldSacks = hackySacker.sacksContainingGold(exampleInput);
         System.out.println("Sacks with gold: " + goldSacks);
         System.out.println("# sacks that can contain gold:" + goldSacks.size());
@@ -23,7 +24,7 @@ class HackySackerTest {
 
     @Test
     void test_actualInput() {
-        List<String> actualInput = AdventUtils.listLinesOfResource("hackySacks.txt");
+        List<String> actualInput = AdventUtils.listLinesOfResource("twenty/hackySacks.txt");
         Set<String> goldSacks = hackySacker.sacksContainingGold(actualInput);
         System.out.println("Sacks with gold: " + goldSacks);
         System.out.println("# sacks that can contain gold: " + goldSacks.size());
@@ -32,7 +33,7 @@ class HackySackerTest {
 
     @Test
     void test_exampleInput1_problem2() {
-        List<String> exampleInput = AdventUtils.listLinesOfResource("exampleHackySacks.txt");
+        List<String> exampleInput = AdventUtils.listLinesOfResource("twenty/exampleHackySacks.txt");
         long goldSacks = hackySacker.bagsInGoldBag(exampleInput);
         System.out.println("Sacks in gold sack: " + goldSacks);
         assertEquals(32, goldSacks);
@@ -40,7 +41,7 @@ class HackySackerTest {
 
     @Test
     void test_exampleInput2_problem2() {
-        List<String> exampleInput = AdventUtils.listLinesOfResource("exampleHackySacks2.txt");
+        List<String> exampleInput = AdventUtils.listLinesOfResource("twenty/exampleHackySacks2.txt");
         long goldSacks = hackySacker.bagsInGoldBag(exampleInput);
         System.out.println("Sacks in gold sack: " + goldSacks);
         assertEquals(126, goldSacks);
@@ -48,7 +49,7 @@ class HackySackerTest {
 
     @Test
     void test_actualInput_problem2() {
-        List<String> actualInput = AdventUtils.listLinesOfResource("hackySacks.txt");
+        List<String> actualInput = AdventUtils.listLinesOfResource("twenty/hackySacks.txt");
         long goldSacks = hackySacker.bagsInGoldBag(actualInput);
         System.out.println("Sacks in gold sack: " + goldSacks);
     }

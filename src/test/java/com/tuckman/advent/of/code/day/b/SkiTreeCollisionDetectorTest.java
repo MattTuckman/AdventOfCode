@@ -1,5 +1,6 @@
 package com.tuckman.advent.of.code.day.b;
 
+import com.tuckman.advent.of.code.twenty.day.b.SkiTreeCollisionDetector;
 import org.junit.jupiter.api.Test;
 
 import java.io.BufferedReader;
@@ -20,7 +21,7 @@ class SkiTreeCollisionDetectorTest {
 
     @Test
     void test_exampleInput() throws URISyntaxException, IOException {
-        URI actualUri = getClass().getClassLoader().getResource("exampleSkiProblem.txt").toURI();
+        URI actualUri = getClass().getClassLoader().getResource("twenty/exampleSkiProblem.txt").toURI();
         Path actualPath = Paths.get(actualUri);
         BufferedReader br = Files.newBufferedReader(actualPath);
         List<String> input = br.lines().collect(Collectors.toList());
@@ -31,7 +32,7 @@ class SkiTreeCollisionDetectorTest {
 
     @Test
     void test_actualInput() throws URISyntaxException, IOException {
-        URI actualUri = getClass().getClassLoader().getResource("skiTreeProblem.txt").toURI();
+        URI actualUri = getClass().getClassLoader().getResource("twenty/skiTreeProblem.txt").toURI();
         Path actualPath = Paths.get(actualUri);
         BufferedReader br = Files.newBufferedReader(actualPath);
         List<String> input = br.lines().collect(Collectors.toList());
@@ -43,7 +44,7 @@ class SkiTreeCollisionDetectorTest {
 
     @Test
     void test_secondProblem() throws URISyntaxException, IOException {
-        URI actualUri = getClass().getClassLoader().getResource("skiTreeProblem.txt").toURI();
+        URI actualUri = getClass().getClassLoader().getResource("twenty/skiTreeProblem.txt").toURI();
         Path actualPath = Paths.get(actualUri);
         BufferedReader br = Files.newBufferedReader(actualPath);
         List<String> input = br.lines().collect(Collectors.toList());

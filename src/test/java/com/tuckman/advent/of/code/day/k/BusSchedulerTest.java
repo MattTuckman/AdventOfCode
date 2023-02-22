@@ -1,6 +1,7 @@
 package com.tuckman.advent.of.code.day.k;
 
 import com.tuckman.advent.of.code.commons.AdventUtils;
+import com.tuckman.advent.of.code.twenty.day.k.BusScheduler;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -12,7 +13,7 @@ class BusSchedulerTest {
 
     @Test
     void test_exampleInput() {
-        List<String> exampleInput = AdventUtils.listLinesOfResource("exampleBus.txt");
+        List<String> exampleInput = AdventUtils.listLinesOfResource("twenty/exampleBus.txt");
         long soonestNum = busScheduler.findSoonestBus(exampleInput);
         System.out.println("Example soonest: " + soonestNum);
         assertEquals(295L, soonestNum);
@@ -20,7 +21,7 @@ class BusSchedulerTest {
 
     @Test
     void test_actualInput() {
-        List<String> actualInput = AdventUtils.listLinesOfResource("bus.txt");
+        List<String> actualInput = AdventUtils.listLinesOfResource("twenty/bus.txt");
         long soonestNum = busScheduler.findSoonestBus(actualInput);
         System.out.println("Soonest: " + soonestNum);
         assertEquals(174L, soonestNum);
@@ -32,13 +33,13 @@ class BusSchedulerTest {
      */
     @Test
     void test_exampleInput_congruence() {
-        List<String> exampleInput = AdventUtils.listLinesOfResource("exampleBus.txt");
+        List<String> exampleInput = AdventUtils.listLinesOfResource("twenty/exampleBus.txt");
         busScheduler.printCRTInput(exampleInput);
     }
 
     @Test
     void test_actualInput_congruence() {
-        List<String> actualInput = AdventUtils.listLinesOfResource("bus.txt");
+        List<String> actualInput = AdventUtils.listLinesOfResource("twenty/bus.txt");
         busScheduler.printCRTInput(actualInput);
     }
 }
